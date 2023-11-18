@@ -1,0 +1,71 @@
+div.main {
+    display: flex;
+    flex-direction: column;
+}
+
+div.main div.card-list {
+    display: flex;
+    column-gap: 5px;
+    margin: 10px;
+    border: 1px solid black;
+    padding: 10px;
+    overflow: scroll;
+}
+
+div.main div.card-list img {
+    width: 5%;
+    height: 150px;
+    transition: all 0.3s;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+div.main div.card-list img:hover {
+    animation: borderAnimationRainbow 1s linear 0s infinite;
+}
+
+div.main button {
+    margin-top: 20px;
+    align-self: center;
+    outline: none;
+    border: none;
+    padding: 15px;
+    font-size: 21px;
+    border-radius: 15px;
+    background-color: rgba(255, 217, 0, 0.664);
+    transition: all 0.3s;
+}
+
+div.main button:hover {
+    background-color: rgb(255, 217, 0);
+}
+
+@keyframes borderAnimationRainbow {
+    0% {
+        border: 2px solid #9400D3;
+    }
+
+    15% {
+        border: 2px solid #4B0082;
+    }
+
+    30% {
+        border: 2px solid #0000FF;
+    }
+
+    45% {
+        border: 2px solid #00FF00;
+    }
+
+    60% {
+        border: 2px solid #FFFF00;
+    }
+
+    75% {
+        border: 2px solid #FF7F00;
+    }
+
+    100% {
+        border: 2px solid #FF0000;
+    }
+}
